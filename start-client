@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "deploy topoloy..."
+
+echo "the jar file is $JAR_FILE"
+echo "the main method is $MAIN_METHOD"
+echo "the nimbus host is $NB_HOST"
+echo "the other parameters are $"
+
+./bin/storm jar $JAR_FILE $MAIN_METHOD $NB_HOST $@ cluster
